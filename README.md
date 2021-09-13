@@ -12,7 +12,7 @@
 * Go check if the comercialized ids are automatically classified.
 *The tests ar contained in the class : IntrusionDetectionSystem>Comercialisé*  
 
-###Sources : 
+### Sources : 
 * [SGC - representation de connaissances avec une ontologie OWL](https://im2ag-moodle.univ-grenoble-alpes.fr/mod/resource/view.php?id=9415)
 * [Vidéo représentation des connaissances avec OWL](https://im2ag-moodle.univ-grenoble-alpes.fr/mod/resource/view.php?id=16994)
 * [Vidéo Pizza en OWL](https://im2ag-moodle.univ-grenoble-alpes.fr/mod/resource/view.php?id=15472)
