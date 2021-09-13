@@ -1,7 +1,7 @@
 ## OWL Model of an Intrusion Detection System
 
 ###### Developped using Protege 5
-*Author : Mehdi BOUDOUR*  
+*Student : Mehdi BOUDOUR*  
 *Teacher : Cyrille DESMOULINS*
 
 **Indication** : 
@@ -10,7 +10,8 @@
 * Launch the reasoner HermiT.
 * Wait for the reasoner et finish (this may take a few minutes).
 * Go check if the comercialized ids are automatically classified.
-*The tests ar contained in the class : IntrusionDetectionSystem>Comercialisé*
+*The tests ar contained in the class : IntrusionDetectionSystem>Comercialisé*  
+
 ###Sources : 
 * [SGC - representation de connaissances avec une ontologie OWL](https://im2ag-moodle.univ-grenoble-alpes.fr/mod/resource/view.php?id=9415)
 * [Vidéo représentation des connaissances avec OWL](https://im2ag-moodle.univ-grenoble-alpes.fr/mod/resource/view.php?id=16994)
