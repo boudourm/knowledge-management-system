@@ -1,0 +1,2742 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HasemergenctNeckless -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HasemergenctNeckless">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isEmergencyNecklessOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#costs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#costs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Price"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCameraOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCentrale -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCentrale">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCentraleOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Centrale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasControlPannel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasControlPannel">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isControlPannelOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isDetectorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasKeyboard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasKeyboard">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isKeyboardOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasLocker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasLocker">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isLockerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasMobileApp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasMobileApp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isMobileAppOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasOpening -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasOpening">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isOpeningOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasScreen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasScreen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isScreenOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Écran"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSirenOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Sirène"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSmokeGenerator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSmokeGenerator">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSmokeGeneratorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSoftwareOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSpeaker -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSpeaker">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSpeakerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCameraOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCameraOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCentraleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCentraleOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Centrale"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCombinedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCombinedWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isControlPannelOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isControlPannelOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isDetectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isDetectorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isEmergencyNecklessOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isEmergencyNecklessOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isKeyboardOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isKeyboardOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isLockerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isLockerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isMadeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isMadeBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isMobileAppOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isMobileAppOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isNotifiedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isNotifiedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Gardien"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Police"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Téléopérateur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isOpeningOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isOpeningOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isProvidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isProvidedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isScreenOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isScreenOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Écran"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSirenOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSirenOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Sirène"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSmokeGeneratorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSmokeGeneratorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSoftwareOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSoftwareOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSpeakerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isSpeakerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isComponentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#locks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#locks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#unlocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#unlocks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Price"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ActivationAutomatiqueDesAlarmes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ActivationAutomatiqueDesAlarmes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmeIntrusionVerisure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmeIntrusionVerisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCombinedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemAntiPyromanTypeA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraAdaptationLuminosité"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétécteurBrouillageRadio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionDirecte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmePiscineAlpool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmePiscineAlpool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementAnimaux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementPersonnes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverturePorte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasLocker"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeIoT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmePiscineAqualarm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmePiscineAqualarm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ActivationAutomatiqueDesAlarmes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraInfraRouge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementAnimaux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverturePorte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasControlPannel"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementPersonnes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasScreen"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierNumérique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSmokeGenerator"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmeSensorEspio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlarmeSensorEspio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraAdaptationLuminosité"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#BatterieSecours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteCoupureCourantElectrique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteCoupureCourantElectrique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuvertureFenêtre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuvertureFenêtre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverturePorte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverturePorte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuvertureVitreBrisée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuvertureVitreBrisée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture_Garage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture_Garage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGaz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGaz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGazDétectionGPL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGazDétectionGPL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGaz"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGazdétectionGazNaturel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGazdétectionGazNaturel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGaz"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteInondation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteInondation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteIntrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteIntrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Alerte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ami_e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ami_e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Invité"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Proche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AnimalDeCompagnie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AnimalDeCompagnie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantPermanent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Appartement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Appartement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AppelPolice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AppelPolice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationCloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationCloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#BatterieSecours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#BatterieSecours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CameraThermique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CameraThermique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraAdaptationLuminosité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraAdaptationLuminosité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraInfraRouge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraInfraRouge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraReconnaissanceFaciale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraReconnaissanceFaciale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Centrale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Centrale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierCommande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierCommande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierExtérieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierExtérieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierIntérieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierIntérieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierNumérique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierNumérique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierPortable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ClavierPortable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Clavier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CompanyMonitoredIds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CompanyMonitoredIds">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MonitoredIds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurBriseGlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurBriseGlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurChocs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurChocs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurCoupureCourant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurCoupureCourant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurDécongélation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurDécongélation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurFumée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurFumée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurGaz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurGaz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurIinfraRouge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurIinfraRouge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurInondation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurInondation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementAnimaux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementAnimaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementObjets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementObjets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementPersonnes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementPersonnes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuvertureFenêtre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuvertureFenêtre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuvertureGarage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuvertureGarage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverturePorte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverturePorte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurTentativeDeBrouillage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurTentativeDeBrouillage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétécteurBrouillageRadio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétécteurBrouillageRadio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Détecteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#EchainementAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#EchainementAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantPermanent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#FormuleSérénitéHomiris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#FormuleSérénitéHomiris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AppelPolice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGaz"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteIntrusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurFumée"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementPersonnes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurBriseGlace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurGaz"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSmokeGenerator"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeOpacifiante"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionDirecte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#FormuleSérénitéIntégraleKiwatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#FormuleSérénitéIntégraleKiwatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSpeaker"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Appartement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionDirecte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParCompartiment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésurveilleanceContinue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Gardien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Gardien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParCompartiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParCompartiment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParZones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParPieces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParPieces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParZones"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParZones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParZones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GuestAirbnb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GuestAirbnb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantTemporaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeExtérieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeExtérieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeIntérieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeIntérieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeOpacifiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeOpacifiante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantPermanent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantPermanent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantTemporaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantTemporaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur4g -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur4g">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurMobileData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur5g -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur5g">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurMobileData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurGSM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurGSM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurMobileData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurMobileData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurUnité_CentraleSonore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurUnité_CentraleSonore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurWifi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleurWifi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HomeBySFR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HomeBySFR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParPieces"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSmokeGenerator"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFuméeOpacifiante"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PlanificationActionTemporisée"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésurveilleanceContinue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IdsForCountrySide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IdsForCountrySide">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasControlPannel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementAnimaux"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSmokeGenerator"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GénérateurFumée"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IdsForFlat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IdsForFlat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasMobileApp"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationCloud"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Appartement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IdsForHouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IdsForHouse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverture"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Maison"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Installateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Installateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterfaceMobileAndroid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterfaceMobileAndroid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterfaceMobileIOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterfaceMobileIOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionDirecte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionDirecte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Intervention"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Invité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Invité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantTemporaire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#KitSomfyOnePlus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#KitSomfyOnePlus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ActivationAutomatiqueDesAlarmes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuvertureFenêtre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverturePorte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Maison"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverturePorte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuvertureFenêtre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#BatterieSecours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Maison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Maison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Habitation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MaisonProtégéeOrange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MaisonProtégéeOrange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionDirecte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#BatterieSecours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasMobileApp"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationCloud"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésurveilleanceContinue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MonitoredIds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MonitoredIds">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Caméra"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteMouvement"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgenceAvecBoutonUrgenceDiscrete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgenceAvecBoutonUrgenceDiscrete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgenceColier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgenceColier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MédaillonUrgence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuvertureFenetre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuvertureFenetre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteCoulissante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteCoulissante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteExterieure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteExterieure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteGarage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteGarage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteInterieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorteInterieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePortePortail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePortePortail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePortillon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePortillon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuverturePorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuvertureVolets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#OuvertureVolets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ouverture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PanneauControleDigital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PanneauControleDigital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PanneauControleLED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PanneauControleLED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PaneauControle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Parent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HabitantPermanent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PlanificationActionTemporisée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#PlanificationActionTemporisée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Police -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Police">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Proche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Proche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Invité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SelfMonitoredIds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SelfMonitoredIds">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#MonitoredIds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Simulateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Simulateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SimulateurDeDisuasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SimulateurDeDisuasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Simulateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SimulateurSonsDomestiques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SimulateurSonsDomestiques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Simulateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Sirène -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Sirène">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Sirène"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Sirène"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SomfyStarterPack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SomfyStarterPack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuvertureFenêtre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteDétectionOuverturePorte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Appartement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétécteurBrouillageRadio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuvertureFenêtre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasMobileApp"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ApplicationMobile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemAntiPyromanTypeA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemAntiPyromanTypeA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurBriseGlace"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementPersonnes"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurFumée"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurGaz"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#triggers"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AlerteGaz"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#IntrusionDetectionSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType1">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#isCombinedWith"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemAntiPyromanTypeA"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType2a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType2a">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParZones"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType2b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType2b">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Planification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType3">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvement"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurOuverture"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeExploitationEmbarqué"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeIoT"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasLocker"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorte"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeType4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneExterieur"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeExploitationEmbarqué"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSoftware"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeIoT"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSpeaker"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeTypeIGH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarmeTypeIGH">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSiren"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SirèneIntérieur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasSpeaker"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#HautParleur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#protects"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Appartement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#GestionParCompartiment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystemeAlarme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeExploitationEmbarqué -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeExploitationEmbarqué">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeIoT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeIoT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Logiciel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeVidéoIntelligentNetatmo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SystèmeVidéoIntelligentNetatmo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Comercialisé"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#provides"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#InterventionADistance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasCamera"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#CaméraReconnaissanceFaciale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasDetector"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#DétecteurMouvementAnimaux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#hasComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SimulateurSonsDomestiques"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Téléopérateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Téléopérateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Acteur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésurveilleanceContinue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésurveilleanceContinue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésuveillanceDiscontinue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TélésuveillanceDiscontinue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Télésurveillance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtreFilaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtreFilaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtre"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtreRadio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtreRadio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtreRadio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérouilleurFenêtre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Vérrouilleur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorteFilaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorteFilaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorte"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorteRadio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorteRadio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorteRadio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#VérrouilleurPorte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Écran -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Écran">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Composant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ÉcranContrôle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ÉcranContrôle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Écran"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ÉcranVisualisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ÉcranVisualisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Écran"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AGSHOME -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#AGSHOME">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Atlantics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Atlantics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Free -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Free">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fuers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fuers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Homiris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Homiris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#KERUI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#KERUI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ker-France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ker-France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Kiwatch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Kiwatch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#LeadEdge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#LeadEdge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Netatmo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Netatmo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Orange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Orange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Ring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SFR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#SFR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Shackcom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Shackcom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TECPEAK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#TECPEAK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#THUSTAND -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#THUSTAND">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Tiiwee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Tiiwee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ToutesLesAlarmes.Com -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#ToutesLesAlarmes.Com">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Verisure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Verisure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdiboudour/ontologies/2021/8/untitled-ontology-7#Fabricant"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
