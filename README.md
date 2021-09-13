@@ -4,9 +4,9 @@
 *Student : Mehdi BOUDOUR*  
 *Teacher : Cyrille DESMOULINS*
 
-**Indication** : 
+**Steps** : 
 * Clone or download the repository.
-* Open the model.owl using Protégé software
+* Open the model.owl using [Protégé](https://protege.stanford.edu/products.php#desktop-protege) software
 * Launch the reasoner HermiT.
 * Wait for the reasoner et finish (this may take a few minutes).
 * Go check if the comercialized ids are automatically classified.
